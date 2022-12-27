@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.inner{
+    padding-top: 70px;
+}
+h3{
+    color: black;
+}
+.skill-title.p{
+    color:black;
+}

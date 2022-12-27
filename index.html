@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PortFolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        
+        
+      
+    }
+   
+    .navbar{
+        background-color: black;
+        font-family: sans-serif;
+        
+    }
+    .navbar a{
+      margin-left:30px;
+    }
+    .navbar a:hover{
+       
+        color: white;
+        text-decoration: none;
+    }
+     ul li{
+        font-family: sans-serif;
+        font-size: 15px;
+        
+    }
+    ul li:hover{
+        background-color: black;
+        font-weight: 100px;
+        
+    }
+    .navbar-port{
+        color:mediumturquoise;
+        font-size: 30px;
+        font-family: sans;
+        margin-top: 10px;
+        display: flex;
+        
+        
+    }
+  
+
+    
+   .nav{
+        float: right;
+        padding-right: 20px;
+       
+        
+   }
+    .btn{
+        float: right;
+        font-weight: bold;
+        
+    }
+    li a{
+        display: block;
+        font-size: 20px;
+        font-family: sans;
+    }
+    h1{
+
+        padding-top: 5px;
+        margin-top: -3px;
+        font-size: 80px;
+        font-family: serif;
+    }
+    h2{
+        padding-top: 80px;
+        font-size: 40px;
+        margin-left: 20px;
+       font-family: serif;
+        
+    }
+    h4{
+      font-weight: 100;
+      font-variant:small-caps;
+    }
+    .infocontainer{
+        margin: 90px;
+    }
+    .pro-img img{
+       height: 300px;
+       width: 300px;
+       float: right;
+       justify:flex;
+       margin: -250px;
+       margin-right: 50px;
+       border-radius: 20px;
+        
+    }
+    .pro-btn{
+       padding-top: 10px;
+        width: 160px;
+        height: 40px;
+        font-size: 20px;
+        font-family: serif;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        
+    }
+    .pro-btn:hover{
+      width: 170px;
+      
+    }
+    .container-intro{
+        height: 460px;
+    }
+   .container-myself{
+        color: black;
+        font-size: 15px;
+   }
+   .navbar-my{
+    background-color: white;
+    color: black;
+   }
+   
+  p{
+    font-size: 16px;
+    cursor: pointer;
+  }
+   .abt{
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+   }
+   .container-aboutMe{
+      background-color:rgba(0,0,0,0.1);
+   }
+   .courses{
+    margin-left: 30px;
+   }
+   .toggle-btn{
+margin-left: 20px;
+padding: 6px;
+font-family: sans-serif;
+color: white;
+margin: 10px;
+font-weight: 10px;
+border-radius: 9px;
+background-color: #ff105f;
+}
+.toggle-btn:hover{
+background-color:white;
+color: black;
+border-color: white auto;
+}
+i{
+  background-color: aliceblue;
+  word-spacing: 100px;
+  
+ 
+}
+.laptop{
+  margin-left: 160px;
+}
+.security{
+  margin-left: 130px;
+}
+.fa{
+  margin-left: 80px;
+}
+.gallery:hover{
+  transform: scale(1.08);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+ 
+ }
+ .gallery{ 
+ margin: 10px; 
+ border: 1px solid black;
+ float: left; 
+ width: 300px; 
+ background-color: white; 
+ border-radius: 10px; 
+ border-style: none; 
+ } 
+ .gallery img{ 
+/* margin: 20px;*/ 
+/* padding: 5px;*/ 
+/* margin-right: 50px;*/ 
+ width: 300px; 
+ height: 300px; 
+ display: flex;
+ align-items: baseline;
+ } 
+ .desc{ 
+ padding: 15px; 
+ text-align: centre; 
+ background-color: white; 
+ } 
+ .container{ 
+ font-family: serif; 
+ padding: 20px; 
+ margin-left: 110px;
+
+ } 
+ .dot {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-flex;
+  margin-left: 270px;
+  
+}
+.foot1{
+  
+  margin-left: 130px;
+}
+.foot2{
+  
+  margin-left: 60px;
+}
+.foot3{
+  
+  margin-left: 60px;
+}
+.foot4{
+  
+  margin-left: 60px;
+}
+ul{
+  margin-left: 200px;
+}
+
+  </style>
+  
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-port " href="#">ADITYA PUJARI<br></a>
+      </div>
+      <ul class="nav navbar-nav " style="float: right;">
+        <li class="active"><a href="#">Home</a></li>
+        <li class=""><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact Us</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <a href="cv.txt" target="_blank"><button class="btn btn-danger navbar-btn">Download Cv</button></a>
+  </ul>
+    </div>
+  </nav>
+</head>
+
+<body>
+<!-- introoo -->
+<section class="intro" style="height: 520px;">
+<div class="container-intro">
+    <div class="infocontainer">
+        <h2 class="font-serif text-5xlxl">Hi I am</h2>
+        <h1>Aditya Pujari</h1>
+        <h4>Full Stack Developer,Android Developer,SQL</h4>
+        <a href="about_me.html"><button type="button" class="pro-btn btn-info" >ABOUT ME</button></a>
+        <a href="cv.txt" target="_blank"><button type="button" class="pro-btn btn-info">DOWNLOAD CV</button></a>
+        <div class="pro-img">
+            <img src="IMG_0709.JPG" class="" alt="Aditya Pujari"></div> 
+        </div>   
+    </div>
+  </section>
+<!-- ABOUTTTTTT -->
+  <section class="about" id="about">
+    <div class="container-aboutMe" style="">
+        <h1 class="abt">ABOUT ME</h1>
+   
+   
+      <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Who Am I?</h3>
+        <img src="IMG_0973 (2).JPG" class="img-circle" style="display:inline" alt="" width="450" height="400">
+        <h3 style="font-weight: bold;">I'm  WEB DEVELOPER</h3>
+      </div>
+      
+      <!-- Second Container -->
+      <div class="container bg-2 text-center">       
+          <p style="font-family: serif; font-weight: 200; font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Hello My name is Aditya Pujari . My age is 20 and im leaving in Ghansoli Navi Mumbai.My hobbie is to play carrm,chess ,cricket. 
+            I'M currently pursing my Bsc. CS from Pillai College Of Arts,Commerce And Science .
+             I love to design Web Pages having very good skills in HTML,CSS,JS .
+              U can contact me on social media platform also as mention in below .
+         </p>             
+      </div><br><br>
+     
+     
+  <hr class="line" style="size: 30px; border-bottom: 1.5px solid black;width: 100%;">
+  <section class="education" id="education" style="height: 700px ;">
+    <div class="education" style="">
+      <h1 class="ser" style="font-weight: bold; font-size: 40px; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 40px; margin-left: 530px; ">EDUCATION</h1><br><br>
+      <div class="ed-desc" style="margin-left: 150px;">
+     
+        <div class="gallery" style="border-width:3px; border-style:solid; border-color:black;"> 
+        <a href="https://shreeramvidyalaya.in/"><img src="https://tse1.mm.bing.net/th?id=OIP.RGrYfxOM8lH34tDMS0KiagHaFx&pid=Api&P=0" ></a><hr>  <div class="desc"> <span class="school" style="font-family: serif; font-size: 20px; background-color: yellow;">2008-2018</span><br> <span class="class" style="font-family: serif; font-weight: 500;">Primary And Secondary Education</span><br> 
+          <span class="">Shreeram Vidyalaya</span><br>
+          SSC-70.93%
+       
+      </div>
+      </div>
+
+      <div class="gallery" style="border-width:3px; border-style:solid; border-color:black;"> 
+        <a href="https://jnanvikasmandal.com/"> <img src="https://www.jnanvikasmandal.com/Jr-College-Airoli/images/banner01.jpg" style="width:295px; cursor: pointer;" ></a><hr>  <div class="desc"> <span class="school" style="font-family: serif; font-size: 20px; background-color: yellow;">2018-2020</span><br> <span class="class" style="font-family: serif; font-weight: 500;">Higher Education 12th Computer Science</span><br> 
+          <span class="">Jnan Vikas Mandal</span><br>
+          HSC-60.92%
+       
+      </div>
+      </div>
+
+      <div class="gallery" style="border-width:3px; border-style:solid; border-color:black;"> 
+        <a href="https://pcacs.ac.in/"> <img src="https://images.static-collegedunia.com/public/college_data/images/appImage/5649_PCA_APP.jpg?tr=w-274,h-130,c-force" style="width:295px; cursor: pointer;" ></a><hr>  <div class="desc"> <span class="school" style="font-family: serif; font-size: 20px; background-color: yellow;">2020-2023</span><br> <span class="class" style="font-family: serif; font-weight: 500;">Higher Education 12th Computer Science</span><br> 
+          <span class="">Pillai College Of Arts,Comm. And Science</span><br>
+          SGPA-9.0
+       
+      </div>
+      </div>    
+    </div>
+  </section>
+    
+</section>
+  <section class="skills" id="skills" style="height: fit-content; background-color:rgba(0, 0, 0, 0.1);">
+    <div class="skills" style=" font-family: serif; ">
+      <h1 class="skill" style="font-weight: bold; font-size: 40px; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 40px; margin-left: 530px; ">Skills</h1><br><br>
+    </div>
+    <span class="dot"></span><span class="skill1" style="margin-left: 10px; font-size: 20px; font-family: serif; color: black; font-size: 40px;">Front End<br></span>
+    <div class="xyz" style="margin-left: -30px;"><span class="skill1" style="margin-left: 350px; font-size: 20px; font-family: serif; color: slategrey  ;font-weight: 300;">HTML</span>
+       <div class="w3-light-grey" style="margin-left: 350px; margin-right: 100px;">
+       <div class="w3-container w3-purple" style="width:90%">90%</div>
+    </div>
+    </div><br>
+    <div class="xyz" style="margin-left: -30px;"><span class="skill1" style="margin-left: 350px; font-size: 20px; font-family: serif; color: slategrey  ;font-weight: 300;">CSS</span>
+      <div class="w3-light-grey" style="margin-left: 350px; margin-right: 100px;">
+      <div class="w3-container w3-purple" style="width:95%">95%</div>
+   </div>
+   </div><br>
+   <div class="xyz" style="margin-left: -30px;"><span class="skill1" style="margin-left: 350px; font-size: 20px; font-family: serif; color: slategrey  ;font-weight: 300;">JAVA SCRIPT</span>
+    <div class="w3-light-grey" style="margin-left: 350px; margin-right: 100px;">
+    <div class="w3-container w3-purple" style="width:80%">80%</div>
+ </div>
+ </div><br><br>
+
+ <span class="dot"></span><span class="skill1" style="margin-left: 10px; font-size: 20px; font-family: serif; color: black; font-size: 40px;">BACK End<br></span>
+    <div class="xyz" style="margin-left: -30px;"><span class="skill1" style="margin-left: 350px; font-size: 20px; font-family: serif; color: slategrey  ;font-weight: 300;">PYTHON</span>
+       <div class="w3-light-grey" style="margin-left: 350px; margin-right: 100px;">
+       <div class="w3-container w3-purple" style="width:80%">80%</div>
+    </div>
+    </div><br>
+    <div class="xyz" style="margin-left: -30px;"><span class="skill1" style="margin-left: 350px; font-size: 20px; font-family: serif; color: slategrey  ;font-weight: 300;">JAVA</span>
+      <div class="w3-light-grey" style="margin-left: 350px; margin-right: 100px;">
+      <div class="w3-container w3-purple" style="width:90%">90%</div>
+   </div>
+   </div><br>
+   <div class="xyz" style="margin-left: -30px;"><span class="skill1" style="margin-left: 350px; font-size: 20px; font-family: serif; color: slategrey ;font-weight: 300;">PHP</span>
+    <div class="w3-light-grey" style="margin-left: 350px; margin-right: 100px;">
+    <div class="w3-container w3-purple" style="width:95%">95%</div>
+ </div>
+ </div><br>
+ <hr class="line" style="size: 30px; border-bottom: 1.5px solid black;width: 100%;">
+ <div class="services" style=" height:500px;">
+  <h1 class="ser" style="font-weight: bold; font-size: 40px; font-family:Georgia, 'Times New Roman', Times, serif; margin-left: 500px; padding: 40px;">SERVICES</h1>
+  <h4 style="margin-left: 380px; margin-top: -30px;">We Provide Best Services With Customer Satisfaction</h4><br><br>
+  <div class="icons" style="margin-left: 150px; display: flex; ">
+   <div class="ecommerce">
+     <i style="font-size:36px  " class="fa">&#xf07a;</i>
+     <br><h3 style="margin-left: 30px; font-variant:small-caps;">E-Commerce</h3>
+     Build, customize & innovate sites. <br>Deliver custom ecommerce faster and<br> at a lower cost. Automate your ecommerce <br>operations and successfully reach your business goals.
+   </div>
+  <div class="laptop">
+   <i class="fa fa-laptop" style="font-size:36px"></i>
+   <br><h3 style=" font-variant:small-caps;">Responsive Design</h3>More responsive websites improve usability and readability<br> on smartphones and other devices, so there’s<br>
+  </div>
+  
+   <div class="security">
+     <i class="material-icons" style="font-size:36px; margin-left: 110px;">wifi</i>
+     <br><h3 style=" font-variant:small-caps; margin-left: 50px;">Web Security</h3>adyyy.com has been visited by 10K+ users<br> in the past month
+     Browser Security Plus is a comprehensive software<br> that prevents web-based threats.
+   </div>
+   
+  </div>        
+</div>  
+  
+  </section>
+  <hr class="line" style="size: 30px; border-bottom: 1.5px solid black;width: 100%;">
+  <section class="contact" id="contact" style="background-color: rgba(0, 0, 0, 0.1);">
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px ;">
+      <h2 style="margin-top: -60px; color: black; margin-left: -14px;">Contact Me:</h2>
+      <p style="color:black; margin-left: -5px; ">Lets get in touch. Send me a message:</p>
+    
+      <hr class="w3-opacity">
+  
+      <div class="w3-section" style=" float: right;">
+        
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> <span style="color: black;">Ghansoli,Navi Mumbai</span></p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i><span style="color: black;">Phone: +91 2727278282</span> </p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> <span style="color: black;">Email: adityapujari2418@mail.com</span></p>
+      </div>
+     <div class="contact-info" style="margin: -20px; ">
+     
+      <form action="#" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" style="width: 550px;" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border"  style="width: 550px;" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border"  style="width: 550px;" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16 w3-border"  style="width: 550px;" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+ 
+  </section>
+    <section class="footer" id="footer" style="background-color:rgb(196, 161, 196); color: black; margin-top: -65px;">
+      <section class="footer bg-purple-800 h-10" id="contact" style="margin-left: 50px;"> <br><br>
+        <div class="icons my-6">
+          <ul class="icn space-x-2" style="margin-left: 300px; margin-top: -20px;">
+            <i class="fa fa-facebook-square" style="font-size:36px"></i>
+            <i class="fa fa-snapchat-square" style="font-size:36px"></i>
+            <i class="fa fa-instagram" style="font-size:36px"></i>
+            <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+          </ul>
+        </div>
+        
+      <div class="fcontent -my-3 ">
+        <ul style="display: flex; " > 
+           <li class="foot1"><a href="#home">HOME</a></li> 
+           <li class="foot2"><a href="#phones">PHONE</a></li> 
+           <li class="foot3"><a href="#contact">CONTACT</a></li> 
+           <li class="foot4"><a href="#about">ABOUT</a></li></ul> <br>
+        <p class="copyright my-4 text-gray-600 font-medium " style="margin-left: 330px; margin-top: -20px;"> 
+        COPYRIGHT ADITYA PUJARI@2022  ALL RIGHTS ARE RESERVED 
+        </p> 
+      </div>
+        </section> 
+    </section>
+
+
+ 
+</body>
+</html>
